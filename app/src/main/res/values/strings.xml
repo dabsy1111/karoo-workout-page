@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Workout Page</string>
+    <string name="extension_name">Workout Page</string>
+    <string name="workout_page">Workout Page</string>
+    <string name="workout_page_description">Runs today\'s intervals.icu workout Garmin-style: 3s power on a target arc, step avg/max, workout graph, upcoming steps and its own controls. Give it a whole page.</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ink">#111111</color>
+    <color name="label">#4A4A4A</color>
+    <color name="page_bg">#FFFFFF</color>
+    <!-- intervals.icu zone colours (Z7 red instead of grey), for step alerts -->
+    <color name="zone1">#4fbca7</color>
+    <color name="zone2">#4fbc4f</color>
+    <color name="zone3">#c99400</color>
+    <color name="zone4">#e06400</color>
+    <color name="zone5">#e85280</color>
+    <color name="zone6">#9572dc</color>
+    <color name="zone7">#d32f2f</color>
+    <color name="alert_bg">#222222</color>
+    <color name="alert_text_dark">#111111</color>
+    <color name="alert_text_light">#FFFFFF</color>
+</resources>

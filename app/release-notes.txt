@@ -1,0 +1,1 @@
+Runs today's intervals.icu workout with its own controls, zoomed graph, lap-press reminders and a post-workout interval summary. Karoo's own font, darker Z3/Z4 colours, solid power needle, whole-zone ranges for Z1/Z2 steps, and much lower battery use (idle until you tap Start, smaller cached images).

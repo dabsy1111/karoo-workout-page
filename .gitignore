@@ -1,0 +1,12 @@
+.gradle/
+build/
+*/build/
+local.properties
+.idea/
+*.iml
+.kotlin/
+.DS_Store
+
+# Shared signing key: kept out of the public repo (lives in the WORKOUTPAGE_KEYSTORE Actions secret)
+/keystore/
+*.jks

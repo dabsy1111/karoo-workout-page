@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Post-workout summary: one row per step marked "intensity=interval", then all of them together.
+     Shown instead of the workout screen once the workout is finished. Weights must match PageRenderer.SumRows. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sum_title"
+            style="@style/Value"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:text="Workout" />
+
+        <TextView
+            android:id="@+id/sum_done"
+            style="@style/Value"
+            android:text="DONE"
+            android:textColor="#2E7D32" />
+    </LinearLayout>
+
+    <!-- Column headings -->
+    <LinearLayout
+        android:id="@+id/sum_head"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/h_num" style="@style/HeadCell" android:layout_weight="9" android:gravity="start|center_vertical" android:text="#" />
+        <TextView android:id="@+id/h_time" style="@style/HeadCell" android:layout_weight="21" android:text="TIME" />
+        <TextView android:id="@+id/h_target" style="@style/HeadCell" android:layout_weight="22" android:text="TARGET" />
+        <TextView android:id="@+id/h_avg" style="@style/HeadCell" android:layout_weight="16" android:text="AVG" />
+        <TextView android:id="@+id/h_np" style="@style/HeadCell" android:layout_weight="16" android:text="NP" />
+        <TextView android:id="@+id/h_max" style="@style/HeadCell" android:layout_weight="16" android:text="MAX" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sum_rows"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="63"
+        android:orientation="vertical" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C8C8C8" />
+
+    <!-- All intervals together -->
+    <LinearLayout
+        android:id="@+id/sum_total"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:background="@drawable/row_current"
+        android:orientation="vertical" />
+
+    <!-- Same controls as the workout screen: Back reopens the last step if you finished by mistake. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="11"
+        android:orientation="horizontal">
+
+        <ImageView android:id="@+id/btn_back" style="@style/CtlButton" android:contentDescription="Previous step" android:src="@drawable/ic_ctl_prev" />
+        <ImageView android:id="@+id/btn_play" style="@style/CtlButton" android:layout_marginStart="6dp" android:layout_marginEnd="6dp" android:contentDescription="Start or pause" android:src="@drawable/ic_ctl_play" />
+        <ImageView android:id="@+id/btn_next" style="@style/CtlButton" android:contentDescription="Next step" android:src="@drawable/ic_ctl_next" />
+    </LinearLayout>
+</LinearLayout>
